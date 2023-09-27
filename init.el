@@ -5,6 +5,7 @@
 
 (global-hl-line-mode -1)
 (line-number-mode +1)
+(setq display-line-numbers-type 'relative) 
 (global-display-line-numbers-mode 1)
 (column-number-mode t)
 (size-indication-mode t)
@@ -18,7 +19,7 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
-(package-refresh-contents)
+;(package-refresh-contents)
 
 (require 'rust-mode)
 
